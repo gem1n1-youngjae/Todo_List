@@ -18,7 +18,7 @@ function handleSubmit(event) {
 
 function askForName() {
   form.classList.add(SHOWING_CN);
-  form.addEventListener("submit", handleSubmit);
+  form.addEventListener("submit", handleSubmit); 
 }
 
 function paintGreeting(text) {
@@ -28,7 +28,7 @@ function paintGreeting(text) {
 }
 
 function loadName() {
-  const currentUser = localStorage.getItem(USER_LS);
+  const currentUser = localStorage.getItem(USER_LS); 
   if (currentUser === null) {
     askForName();
   } else {
