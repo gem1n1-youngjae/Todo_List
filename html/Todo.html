@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,33 +8,45 @@
     <link rel="stylesheet" href="../css/TodoStyle.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <h1>To Do List!</h1>
-    </header>
-    <main>
+    <div class="header">
+        <h1 class="headerText">To Do List!</h1>
+    </div>
+    <div class="main">
         <div class="container">
             <div class="items">
-                <div class="js-clock">
-                    <h1 class="time">00:00</h1>
+                <div class="jsClock">
+                    <span id="timeFont" class="timeHour"></span>
+                    <span id="timeFont" class="dot">:</span>
+                    <span id="timeFont" class="timeMinute"></span>
                 </div>
                 <div class="space"></div>
-                <form class="js-form form">
-                    <input type="text" placeholder="What is your name?" />
-                </form>
-                <h4 class="js-greetings greetings"></h4>
+                <div class="input">
+                    <form class="jsForm form">
+                        <input class="textBox" type="text" placeholder="What is your name?" />
+                    </form>
+                </div>
+                <h4 class="jsGreetings greetings"></h4>
                 <div class="space"></div>
-                <form class="js-toDoForm">
-                    <input type="text" placeholder="Write a to do" />
-                </form>
-                <ul class="js-toDoList">
-                </ul> 
+                <div class="input">
+                    <form class="jsToDoForm">
+                        <input class="textBox" type="text" placeholder="Write a to do" />
+                    </form>
+                </div>
+                <div class="toDoList">
+                    <ul class="jsToDoList">
+                    </ul>
+                </div>
             </div>
         </div>
-    </main>
+    </div>
+    <div class="background">
+        <img src="../images/1.jpg">
+    </div>
     <script src="../js/clock.js"></script>
     <script src="../js/gretting.js"></script>
     <script src="../js/todo.js"></script>
-    <script src="../js/bg.js"></script>
 </body>
+
 </html>
