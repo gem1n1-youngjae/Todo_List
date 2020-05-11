@@ -11,7 +11,7 @@ function getTime() {
   const minutes = date.getMinutes();
   const hours = date.getHours();
   const seconds = date.getSeconds();
-  clockHour.innerText = `${(hours > 12 ? `${hours-12}` : hours) < 10 ? `0${hours-12}` : hours}`;
+  clockHour.innerText = `${(hours > 12 ? `${hours-12}` : hours) < 10 ? `0${hours}` : hours}`;
   clockMinute.innerText = `${minutes < 10 ? `0${minutes}` : minutes}`
   clockSecond.innerText = `${seconds < 10 ? `0${seconds}` : seconds}`
   clockPeriod.innerText = `${hours > 12 ? `pm` : `am`}`
