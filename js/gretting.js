@@ -14,6 +14,7 @@ function handleSubmit(event) {
   const currentValue = input.value;
   paintGreeting(currentValue);
   saveName(currentValue);
+  document.getElementById("jsSet").className = "setName";
 }
 
 function askForName() {
@@ -33,6 +34,7 @@ function loadName() {
     askForName();
   } else {
     paintGreeting(currentUser);
+    document.getElementById("jsSet").className = "setName";
   }
 }
 

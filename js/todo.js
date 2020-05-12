@@ -26,8 +26,8 @@ function paintToDo(text) {
   const delBtn = document.createElement("button");
   const span = document.createElement("span");
   const newId = toDos.length + 1;
-  if (newId > 20) {
-    alert("There are too many lists!")
+  if (newId > 15) {
+    alert("There are too many lists!");
   }
   else{
     delBtn.innerText = "❌";

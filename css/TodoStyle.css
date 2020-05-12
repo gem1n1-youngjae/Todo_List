@@ -38,7 +38,7 @@ main {
 
 .items {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -100,9 +100,18 @@ main {
   height: 3vh;
   background-color: rgba(249, 249, 249, 0.42);
   padding: 4px 8px;
-  margin: 10px;
+  margin: 5px;
   border: 0;
   border-radius: 4px;
+}
+
+.setName{
+  width: 14vw;
+  height: auto;
+  padding: 7px 8px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 input::placeholder {
@@ -116,22 +125,44 @@ input:hover{
   background-color: rgba(255, 255, 255, 0.55);
 }
 
+input:focus{
+  transition-duration: 0.3s;
+  color: black;
+  background-color: white;
+}
+
+ul{
+  padding: 0px;
+}
+
 li {
   list-style: none;
-  margin: 6px;
+  margin: 5px;
 }
 
 .text {
   width: 100%;
   padding: 0 8px;
+  color: black;
 }
 
 .toDoList {
   position: absolute;
-  top: 70%;
+  top: 62%;
   left: 50%;
   height: 50%;
   transform: translate(-50%, -50%);
+}
+
+.list{
+  padding: 3px;
+  border-radius: 5px;
+  background-color: rgba(249, 249, 249, 0.8);
+}
+
+.delBtn{
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
 }
 
 .background img {
