@@ -5,7 +5,6 @@ const toDoForm = document.querySelector(".jsToDoForm"),
 const TODOS_LS = "toDos";
 
 let toDos = [];
-let space = []
 
 function deleteToDo(event) {
   const btn = event.target;
@@ -27,21 +26,26 @@ function paintToDo(text) {
   const delBtn = document.createElement("button");
   const span = document.createElement("span");
   const newId = toDos.length + 1;
-  delBtn.innerText = "❌";
-  delBtn.addEventListener("click", deleteToDo);
-  span.innerText = text;
-  li.appendChild(span);
-  li.appendChild(delBtn);
-  li.id = newId;
-  li.classList.add("list");
-  span.classList.add("text");
-  delBtn.classList.add("delBtn")
-  toDoList.appendChild(li);
-  const toDoObj = {
-    text: text,
-    id: newId
-  };
-  toDos.push(toDoObj);
+  if (newId > 20) {
+    alert("There are too many lists!")
+  }
+  else{
+    delBtn.innerText = "❌";
+    delBtn.addEventListener("click", deleteToDo);
+    span.innerText = text;
+    li.appendChild(span);
+    li.appendChild(delBtn);
+    li.id = newId;
+    li.classList.add("list");
+    span.classList.add("text");
+    delBtn.classList.add("delBtn")
+    toDoList.appendChild(li);
+    const toDoObj = {
+      text: text,
+      id: newId
+    };
+    toDos.push(toDoObj);
+  }
   saveToDos();
 }
 function handleSubmit(event) {
