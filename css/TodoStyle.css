@@ -105,7 +105,7 @@ main {
   border-radius: 4px;
 }
 
-.setName{
+.setName {
   width: 14vw;
   height: auto;
   padding: 7px 8px;
@@ -120,18 +120,18 @@ input::placeholder {
   font-weight: 600;
 }
 
-input:hover{
+input:hover {
   transition-duration: 0.3s;
   background-color: rgba(255, 255, 255, 0.55);
 }
 
-input:focus{
+input:focus {
   transition-duration: 0.3s;
   color: black;
   background-color: white;
 }
 
-ul{
+ul {
   padding: 0px;
 }
 
@@ -154,13 +154,13 @@ li {
   transform: translate(-50%, -50%);
 }
 
-.list{
+.list {
   padding: 3px;
   border-radius: 5px;
   background-color: rgba(249, 249, 249, 0.8);
 }
 
-.delBtn{
+.delBtn {
   background-color: rgba(0, 0, 0, 0);
   border: 0;
 }

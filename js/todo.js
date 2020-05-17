@@ -22,10 +22,10 @@ function saveToDos() {
 }
 
 function paintToDo(text) {
-  const li = document.createElement("li");
-  const delBtn = document.createElement("button");
-  const span = document.createElement("span");
-  const newId = toDos.length + 1;
+  let li = document.createElement("li");
+  let delBtn = document.createElement("button");
+  let span = document.createElement("span");
+  let newId = toDos.length + 1;
   if (newId > 15) {
     alert("There are too many lists!");
   }
